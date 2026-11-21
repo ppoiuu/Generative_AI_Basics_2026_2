@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#eef0f3">
+<title>MINIME</title>
+<link rel="icon" type="image/png" sizes="32x32" href="/static/brand/favicon-32.png">
+<link rel="icon" type="image/png" sizes="64x64" href="/static/brand/icon-64.png">
+<link rel="apple-touch-icon" href="/static/brand/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-send" viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 4l1.6 4.4L18 10l-4.4 1.6L12 16l-1.6-4.4L6 10l4.4-1.6z"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 21s7-3.5 7-9V6l-7-3-7 3v6c0 5.5 7 9 7 9z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V4"/><path d="M5 4h11l-2 4 2 4H5"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8M18 14a6.5 6.5 0 0 1 3.5 6"/></symbol>
+    <symbol id="i-brain" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M15 4v16"/></symbol>
+    <symbol id="i-qr" viewBox="0 0 24 24"><rect x="4" y="4" width="6" height="6" rx="1.5"/><rect x="14" y="4" width="6" height="6" rx="1.5"/><rect x="4" y="14" width="6" height="6" rx="1.5"/><path d="M14 14h2v2M20 14v.01M14 20h2M18 18h2v2"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13l10.5-6.5z"/></symbol>
+    <symbol id="i-next" viewBox="0 0 24 24"><path d="M6 6l9 6-9 6z"/><path d="M18 6v12"/></symbol>
+    <symbol id="i-reset" viewBox="0 0 24 24"><path d="M4 5v5h5"/><path d="M5.5 15a7.5 7.5 0 1 0 1.3-7.7L4 10"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M17 7 7 17M7 7l10 10"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="m7 10 5 5 5-5"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></symbol>
+    <symbol id="i-logout" viewBox="0 0 24 24"><path d="M14 4h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-4"/><path d="M10 16l-4-4 4-4M6 12h10"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></symbol>
+    <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 16V4M7 9l5-5 5 5"/><path d="M5 15v3a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-3"/></symbol>
+    <symbol id="i-edit" viewBox="0 0 24 24"><path d="M4 20h4L19 9l-4-4L4 16z"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2l1-12M9 7V4h6v3"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5.5M12 16.5v.01"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.5v.01"/></symbol>
+    <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2.5"/><path d="M10 2v3M14 2v3M10 19v3M14 19v3M2 10h3M2 14h3M19 10h3M19 14h3"/></symbol>
+    <symbol id="i-msg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 1-11.6 7.1L4 20l1-4.2A8 8 0 1 1 20 12z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-wand" viewBox="0 0 24 24"><path d="m4 20 10-10M14 4v3M14 13v3M20 10h-3M11 10H8M18.2 5.8l-2 2M18.2 14.2l-2-2"/></symbol>
+    <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.6 9.3a2.5 2.5 0 0 1 4.8.9c0 1.7-2.4 2.2-2.4 3.8M12 16.8v.01"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/></symbol>
+    <symbol id="i-more" viewBox="0 0 24 24"><circle cx="6" cy="12" r="1.3"/><circle cx="12" cy="12" r="1.3"/><circle cx="18" cy="12" r="1.3"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="2.8"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-hash" viewBox="0 0 24 24"><path d="M9 4 7 20M17 4l-2 16M4.5 9h16M3.5 15h16"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9.5h8M8 12.5h5"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 3 5 13.5h6L10 21l8-10.5h-6z"/></symbol>
+    <symbol id="i-note" viewBox="0 0 24 24"><path d="M5 4h14v11l-5 5H5z"/><path d="M14 20v-5h5M8.5 9h7M8.5 12h4"/></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24"><path d="M4 8l8-4 8 4v8l-8 4-8-4z"/><path d="M4 8l8 4 8-4M12 12v8"/></symbol>
+    <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21"/></symbol>
+    <symbol id="i-stop" viewBox="0 0 24 24"><rect x="7" y="7" width="10" height="10" rx="2"/></symbol>
+    <symbol id="i-mini" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="5.5" stroke-dasharray="3.2 2.6"/><circle cx="12" cy="12" r="2.6"/></symbol>
+  </defs>
+</svg>
+
+<!-- ============================================================ 로비 -->
+<main id="lobby" class="lobby" hidden>
+  <section class="lobby-intro">
+    <div class="wordmark"><img class="logo-light" src="/static/brand/logo.png" alt="MINIME"><img class="logo-dark" src="/static/brand/logo-dark.png" alt="MINIME"></div>
+    <h1>내가 회의에 못 가도,<br><span class="accent">내 미니미</span>는 회의에 간다</h1>
+    <p>입장 카드를 근거로 불참한 나를 대신해 토론하고, 최종 결정은 사람이 하는 AI 회의 플랫폼이에요.</p>
+    <ul class="lobby-points">
+      <li><svg class="ic"><use href="#i-bolt"/></svg><span><b>1분이면 준비</b>문서 없이 쟁점만 골라도 돼요</span></li>
+      <li><svg class="ic"><use href="#i-doc"/></svg><span><b>근거가 있을 때만</b>모든 발언에 출처, 모르면 질문으로</span></li>
+      <li><svg class="ic"><use href="#i-check"/></svg><span><b>결정은 사람이</b>불참자 관련 결정은 보류 후 승인</span></li>
+    </ul>
+    <button class="text-btn" id="guideBtn" type="button"><svg class="ic"><use href="#i-help"/></svg>이용 안내 보기</button>
+  </section>
+
+  <section class="lobby-card">
+    <form id="roomForm" class="room-row" autocomplete="off">
+      <label class="sr-only" for="roomInput">방 코드</label>
+      <input id="roomInput" name="room" placeholder="방 코드" maxlength="32" pattern="[A-Za-z0-9_\-]{1,32}" required>
+      <button class="btn" type="submit">불러오기</button>
+    </form>
+    <div id="lobbyRoom" hidden>
+      <div class="lobby-room-head">
+        <div class="grow"><div class="lobby-title" id="lobbyRoomTitle"></div><div class="lobby-agenda" id="lobbyAgenda"></div></div>
+        <span class="online-note" id="lobbyOnline"></span>
+      </div>
+      <div id="seatGrid" class="seat-grid"></div>
+      <details class="fold">
+        <summary>새 팀원으로 들어가기</summary>
+        <form id="newMemberForm" class="row-form">
+          <input name="name" id="newMemberName" placeholder="이름" maxlength="12" required>
+          <input name="role" id="newMemberRole" placeholder="맡은 일 (선택)" maxlength="20">
+          <button class="btn primary" type="submit">입장</button>
+        </form>
+      </details>
+      <button class="text-btn" id="observeBtn" type="button"><svg class="ic"><use href="#i-eye"/></svg>발표 화면으로 보기</button>
+    </div>
+    <details class="fold">
+      <summary>새 회의방 만들기</summary>
+      <form id="newRoomForm" class="stack">
+        <div class="grid2">
+          <label class="field"><span>방 코드</span><input name="room_id" id="newRoomId" placeholder="team4" maxlength="32" pattern="[A-Za-z0-9_\-]{1,32}" required></label>
+          <label class="field"><span>팀 이름</span><input name="title" id="newRoomTitle" placeholder="스피치와 토론 4조" maxlength="60"></label>
+        </div>
+        <label class="field"><span>오늘 안건</span><input name="agenda" id="newRoomAgenda" placeholder="정책 제안 발표 준비" maxlength="120"></label>
+        <label class="field"><span>쟁점 <small>한 줄에 하나 · 선택지는 '쟁점: A안, B안'</small></span>
+          <textarea name="issues" id="newRoomIssues" rows="3" placeholder="제안할 예산안: A안, B안&#10;자료 조사 방법: 설문, 타 대학 사례&#10;발표 역할과 리허설"></textarea></label>
+        <label class="check"><input type="checkbox" name="seed_live" id="newRoomSeedLive"> 시연용: 민준·지연·하린 자료 채우고 도윤만 비워 두기</label>
+        <button class="btn primary" type="submit">방 만들기</button>
+      </form>
+    </details>
+    <button class="text-btn" id="adminBtn" type="button"><svg class="ic"><use href="#i-edit"/></svg>방 관리</button>
+  </section>
+</main>
+
+<!-- ============================================================ 회의방 -->
+<div id="app" class="shell" hidden>
+  <aside class="side" id="leftPanel">
+    <div class="side-top">
+      <span class="room-mark" id="roomMark"></span>
+      <div class="grow">
+        <div class="room-title" id="roomTitle"></div>
+        <div class="room-agenda" id="agendaTitle"></div>
+      </div>
+      <button class="icon-btn sm" data-act="agenda" title="안건 편집" aria-label="안건 편집"><svg class="ic"><use href="#i-edit"/></svg></button>
+    </div>
+    <div class="side-scroll">
+      <section class="side-sec"><h4 class="side-label">쟁점</h4><ol class="issue-list" id="issueList"></ol></section>
+      <section class="side-sec"><h4 class="side-label">멤버 <span id="presenceCount"></span></h4><ul class="member-list" id="memberList"></ul></section>
+      <section class="side-sec"><h4 class="side-label">결정 <span id="decisionCount"></span></h4><ul class="decision-list" id="decisionList"></ul></section>
+    </div>
+    <div class="me-bar" id="myCard"></div>
+  </aside>
+
+  <main class="chat">
+    <header class="chat-head">
+      <button class="icon-btn only-narrow" id="openLeft" aria-label="안건과 참석자"><svg class="ic"><use href="#i-menu"/></svg></button>
+      <div class="head-main">
+        <div class="head-title" id="issueStrip"></div>
+        <div class="head-sub"><span id="meetingState"></span><span class="engine" id="enginePill" role="button" tabindex="0"><span class="dot"></span><span id="engineText">엔진 확인 중</span></span></div>
+      </div>
+      <div class="head-actions">
+        <div class="avatar-stack" id="avatarStack"></div>
+        <button class="icon-btn" id="brainBtn" title="미니미의 머릿속" aria-label="미니미의 머릿속"><svg class="ic"><use href="#i-brain"/></svg></button>
+        <button class="icon-btn" id="inviteBtn" title="팀원 초대" aria-label="팀원 초대"><svg class="ic"><use href="#i-qr"/></svg></button>
+        <button class="pill-btn" id="demoBtn" title="시연 가이드"><svg class="ic"><use href="#i-play"/></svg><span>시연</span></button>
+        <div class="pop-wrap">
+          <button class="icon-btn" id="meBtn" aria-haspopup="true" aria-label="더 보기"><svg class="ic"><use href="#i-more"/></svg></button>
+          <div class="menu" id="meMenu" hidden>
+            <div class="menu-label">미니미 개입 방식</div>
+            <button class="menu-radio" data-mode="intervene" role="menuitemradio" aria-checked="true"><b>개입형</b><span>필요할 때만, 가장 관련 있는 미니미 1명</span></button>
+            <button class="menu-radio" data-mode="interactive" role="menuitemradio" aria-checked="false"><b>상호작용형</b><span>관련 있는 미니미가 최대 2명까지</span></button>
+            <button class="menu-radio" data-mode="call" role="menuitemradio" aria-checked="false"><b>호출형</b><span>@이름으로 부를 때만</span></button>
+            <hr>
+            <button data-act="prep"><svg class="ic"><use href="#i-mini"/></svg>내 미니미 준비</button>
+            <button data-act="digest"><svg class="ic"><use href="#i-clock"/></svg>내가 빠진 사이</button>
+            <button data-act="privacy"><svg class="ic"><use href="#i-shield"/></svg>개인정보 동의 내용</button>
+            <button data-act="guide"><svg class="ic"><use href="#i-help"/></svg>이용 안내</button>
+            <button data-act="agenda"><svg class="ic"><use href="#i-edit"/></svg>안건 편집</button>
+            <button id="themeBtn"><svg class="ic"><use href="#i-moon"/></svg>다크 모드</button>
+            <hr>
+            <button id="endBtn"><svg class="ic"><use href="#i-flag"/></svg>회의 종료 · 회의록</button>
+            <button data-act="leave"><svg class="ic"><use href="#i-logout"/></svg>자리 바꾸기</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="auto-bar" id="autoBar" hidden></div>
+    <div class="conn-banner" id="connBanner" hidden>연결이 끊겼어요. 다시 연결하는 중…</div>
+    <div class="feed" id="feed" aria-live="polite"></div>
+    <div class="typing" id="typing"></div>
+    <div class="composer-wrap" id="composerWrap">
+      <div class="refine-card" id="refineCard" hidden></div>
+      <div class="mention-pop" id="mentionPop" hidden></div>
+      <form class="composer" id="composer">
+        <div class="composer-modes">
+          <button type="button" data-cmode="direct" aria-pressed="true" hidden>바로</button>
+          <button type="button" class="wand" data-cmode="refine" aria-pressed="false" title="다듬어서 보내기: 한 줄만 적으면 내 미니미가 다듬고, 보내기 전에 확인해요" aria-label="다듬어서 보내기"><svg class="ic"><use href="#i-wand"/></svg></button>
+        </div>
+        <label class="sr-only" for="input">메시지</label>
+        <textarea id="input" rows="1" maxlength="2000" placeholder="메시지 보내기"></textarea>
+        <button class="send" type="submit" aria-label="보내기"><svg class="ic"><use href="#i-send"/></svg></button>
+      </form>
+    </div>
+    <div class="away-bar" id="awayBar" hidden></div>
+    <div class="observer-bar" id="observerBar" hidden><svg class="ic"><use href="#i-eye"/></svg>발표 화면으로 보는 중이에요</div>
+  </main>
+
+  <aside class="brain" id="rightPanel">
+    <div class="brain-head">
+      <h2>미니미의 머릿속</h2>
+      <button class="icon-btn sm" id="closeRight" aria-label="닫기"><svg class="ic"><use href="#i-x"/></svg></button>
+    </div>
+    <div class="tabs" role="tablist">
+      <button role="tab" data-tab="gate" aria-selected="true">판단</button>
+      <button role="tab" data-tab="evidence">근거</button>
+      <button role="tab" data-tab="drift">안건</button>
+      <button role="tab" data-tab="engine">엔진</button>
+    </div>
+    <div class="tab-body" id="tab-gate"></div>
+    <div class="tab-body" id="tab-evidence" hidden></div>
+    <div class="tab-body" id="tab-drift" hidden></div>
+    <div class="tab-body" id="tab-engine" hidden></div>
+  </aside>
+
+  <nav class="bottom-nav" id="bottomNav">
+    <button data-nav="chat" aria-current="true"><svg class="ic"><use href="#i-msg"/></svg>대화</button>
+    <button data-nav="left"><svg class="ic"><use href="#i-users"/></svg>참석자</button>
+    <button data-nav="right"><svg class="ic"><use href="#i-brain"/></svg>머릿속</button>
+    <button data-nav="prep"><svg class="ic"><use href="#i-mini"/></svg>내 미니미</button>
+  </nav>
+  <div class="scrim" id="scrim" hidden></div>
+</div>
+
+<!-- ============================================================ 시연 가이드 -->
+<section class="demo-panel" id="demoPanel" hidden aria-label="시연 가이드">
+  <header class="demo-head">
+    <div class="grow"><div class="demo-kicker" id="demoMetric"></div><h3 id="demoTitle">시연</h3></div>
+    <button class="icon-btn sm" id="demoMin" aria-label="접기"><svg class="ic"><use href="#i-down"/></svg></button>
+    <button class="icon-btn sm" id="demoClose" aria-label="닫기"><svg class="ic"><use href="#i-x"/></svg></button>
+  </header>
+  <ol class="demo-steps" id="demoSteps"></ol>
+  <div class="demo-body">
+    <p class="demo-narration" id="demoNarration"></p>
+    <div class="demo-status" id="demoStatus"></div>
+  </div>
+  <footer class="demo-foot">
+    <button class="btn primary" id="demoRun"><svg class="ic"><use href="#i-play"/></svg>실행</button>
+    <button class="btn" id="demoNext"><svg class="ic"><use href="#i-next"/></svg>다음</button>
+    <button class="btn ghost" id="demoAuto">자동 재생</button>
+    <span class="grow"></span>
+    <label class="sr-only" for="demoSpeed">속도</label>
+    <select id="demoSpeed"><option value="1.4">느리게</option><option value="1" selected>보통</option><option value="0.55">빠르게</option></select>
+    <button class="icon-btn" id="demoRestart" title="처음부터" aria-label="처음부터"><svg class="ic"><use href="#i-reset"/></svg></button>
+  </footer>
+</section>
+
+<!-- ============================================================ 모달·시트 -->
+<div class="modal" id="modal" hidden>
+  <div class="modal-scrim" data-close></div>
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <header class="modal-head">
+      <div><div class="kicker" id="modalEyebrow"></div><h3 id="modalTitle"></h3></div>
+      <button class="icon-btn sm" data-close aria-label="닫기"><svg class="ic"><use href="#i-x"/></svg></button>
+    </header>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<div class="sheet" id="sheet" hidden>
+  <div class="modal-scrim" data-sclose></div>
+  <div class="sheet-card" role="dialog" aria-modal="true" aria-labelledby="sheetTitle">
+    <header class="sheet-head">
+      <div><div class="kicker" id="sheetEyebrow"></div><h3 id="sheetTitle"></h3></div>
+      <button class="icon-btn sm" data-sclose aria-label="닫기"><svg class="ic"><use href="#i-x"/></svg></button>
+    </header>
+    <div class="sheet-body" id="sheetBody"></div>
+  </div>
+</div>
+
+<div class="popover" id="popover" hidden></div>
+<div class="toasts" id="toasts" aria-live="assertive"></div>
+
+<script src="/static/guide.js"></script>
+<script src="/static/panels.js"></script>
+<script src="/static/app.js"></script>
+</body>
+</html>
